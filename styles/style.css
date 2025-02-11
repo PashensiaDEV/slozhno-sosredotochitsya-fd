@@ -1,5 +1,50 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+.header-corner-rec {
+  position: absolute;
+  line-height: 2;
+  inset: 10px 20px auto auto;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.header-corner-rec::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 4px var(--accent-color) ;
+  background-color: var(--accent-color) ;
+  height: 10px;
+  width: 10px;
+  margin-left: 10px;
+}
+
+.header {
+  background: url() center ; 
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: 10px;
+  align-items: center;
+  min-height: 668px;
+  position: relative;
+
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-self:end;
+  align-self: middle;
+}
+
+.header__title {
+  color: var(--color-title);
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem); 
+  font-weight: bold;
+  line-height: 95px;
+  text-shadow: 4px 4px var(--accent-color);
+}
 .page {
+  font-family: var(--main-font);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }

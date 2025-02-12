@@ -75,6 +75,7 @@
 .title-decor {
   background-color: var(--accent-color);
   color: var(--main-text-color);
+  font-size: 1em;
 }
 
 .header::after {
@@ -92,4 +93,43 @@
   font-size: 18px;
   background: var(--back-image) no-repeat center / cover;
   background-attachment: fixed;
+}
+
+.main-content {
+  margin-block-start: 40px;
+  padding: 0 10px;
+}
+
+.main-content-section {
+  margin-block-end: 50px;
+}
+
+.main-content-article > p {
+  margin-block-end: 20px;
+}
+
+.title-main-section {
+  font-size: 1em;
+  color: var(--accent-color);
+  margin-block-end: 20px;
+}
+
+.title-main-section ~ span {
+  display: inline-block;
+  margin-block-end: 20px;
+  font-weight: bold;
+}
+
+.title-main-article {
+  margin-block-end: 10px;
+}
+
+.title-main-article-no-accent {
+  font-weight: normal;
+  font-size: 1em;
+  margin-block-end: 10px;
+}
+
+.image-item {
+  width: 100%;
 }

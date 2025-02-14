@@ -1,4 +1,4 @@
-.header-corner-rec {
+.header-corner-rec {        /* реализация абсолютного элемента рек */
   position: absolute;
   line-height: 25px;
   inset: 10px 20px auto auto;
@@ -7,7 +7,7 @@
   font-weight: normal;
 }
 
-.header-corner-rec::after {
+.header-corner-rec::after {   /* реализация псевдолэлемента рядом с элементом рек */
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -19,7 +19,7 @@
 }
 
 .header::before,
-.footer::before {
+.footer::before {  /* абсолютные элементы на футере и хедере страницы реализованны двойным запросом к тегам */
   content: "";
   position: absolute;
   inset: 10px 10px auto auto;
@@ -29,7 +29,7 @@
   border-right: 1px solid var(--accent-color);
 }
 
-.header {
+.header {      /* стилизация шапки и кнопок с ими состояниями*/
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   padding: 10px;
@@ -89,7 +89,7 @@
   line-height: 23.4px;
 }
 
-.title-decor {
+.title-decor {             /* по тз запросили отдельный тег для реализации одинаковых элементов */
   background-color: var(--accent-color);
   color: var(--main-text-color);
   font-size: 1em;
@@ -106,7 +106,7 @@
   border-left: 1px solid var(--accent-color);
 }
 
-.page {
+.page {         /* стилизация основного сектора  */
   font-family: var(--main-font);
   font-size: 18px;
   background: var(--back-image) no-repeat center / cover;
@@ -133,7 +133,7 @@
   text-shadow: 2px 1px var(--accent-color);
 }
 
-.article-links:hover {
+.article-links:hover {       /* стилизация состояний ссылок */
   text-decoration: underline;
 }
 
@@ -150,12 +150,6 @@
   color: var(--accent-color);
   margin-block-end: 20px;
 }
-
-/* .title-main-section ~ span {
-  display: inline-block;
-  margin-block-end: 20px;
-  font-weight: bold;
-} */
 
 .main-content-article-text {
   display: block;
@@ -209,7 +203,7 @@
 .main__content > section:not(:last-child) {
   margin-bottom: 49px;
 }
-
+/* медиазапрос для девайсов от 768 пикселей то-есть для планшетов */
 @media (width >= 768px) {
   .header::after,
   .footer::after {
@@ -304,7 +298,7 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
-
+/* медиазапрос для декстопа */
 @media (width >= 1024px) {
   .header {
     min-height: 768px;

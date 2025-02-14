@@ -1,22 +1,24 @@
 :root.theme-light {
   --back-image: url(../images/cover-image-light.png);
   --accent-color: #ff8dcb;
-  --accent-color-opacity: rgba(255, 0, 112, 0.4);
   --main-text-color: #000028;
   --general-font-color: #353430;
   --color-title: #ffc2e6;
   --back-color-bu: #fff1f7;
+  --accent-title: #353430;
+  --accent-color-opacity: #32312d66;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --back-image: url(../images/cover-image-light.png);
     --accent-color: #ff8dcb;
-    --accent-color-opacity: rgba(255, 0, 112, 0.4);
     --main-text-color: #000028;
     --general-font-color: #353430;
     --color-title: #ffc2e6;
     --back-color-bu: #fff1f7;
+    --accent-title: #353430;
+    --accent-color-opacity: #32312d66;
   }
 
   .header-corner-rec {

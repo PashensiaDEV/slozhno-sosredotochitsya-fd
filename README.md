@@ -1,1 +1,1 @@
-https://github.com/PashensiaDEV/slozhno-sosredotochitsya-fd
+Ссылка для просмотра проекта - https://pashensiadev.github.io/slozhno-sosredotochitsya-fd/
